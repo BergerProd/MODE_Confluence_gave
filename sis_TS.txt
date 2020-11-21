@@ -1,0 +1,76 @@
+PROCESSEURS PARALLELES :  6
+/---------------------------------------------------------------------
+/ SISYPHE Version v7p0 1 juil. 2015
+/---------------------------------------------------------------------
+/---------------------------------------------------------------------
+/---------------------------------------------------------------------
+/ ENTREES-SORTIES, FICHIERS
+/---------------------------------------------------------------------
+/ FICHIERS DONNEES
+/---------------------------------------------------------------------
+FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2016_LC.slf'
+FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_LC.cli'
+FICHIER DES RESULTATS       = 'sed16_crue18_1_4cm_K35_noerod.slf'
+/ CHARRIAGE
+/---------------------------------------------------------------------
+FORMULE DE TRANSPORT SOLIDE =1
+CHARRIAGE=OUI
+PARAMETRES DE SHIELDS=0.047D0
+/RAPPORT D'EVOLUTION CRITIQUE=100
+OPTION DE TRAITEMENT DES FONDS NON ERODABLES=4
+/COEFFICIENT FONCTION DE LA POROSITE = 1.6 
+SUSPENSION = NON
+DIFFUSION  =NON
+MASSE VOLUMIQUE DU SEDIMENT=2650
+DIAMETRE MOYEN DES GRAINS=0.04
+/NOMBRE DE CLASSES GRANULOMETRIQUES : 10
+/DIAMETRES DES GRAINS =
+/0.002;0.004;0.008;0.016;0.032;0.064;0.128;0.256;0.512;1.024
+/FRACTION INITIALE PAR CLASSE SEDIMENTOLOGIQUE = 
+/0.054;0.005;0.015;0.079;0.149;0.218;0.228;0.193;0.054;0.005
+
+
+CONCENTRATION D'EQUILIBRE EN ENTREE = OUI
+
+
+
+
+/---------------------------------------------------------------------
+/ EFFET PENTE
+/---------------------------------------------------------------------
+/FORMULE POUR LA DEVIATION=2
+EFFET DE PENTE=OUI
+/PARAMETRE POUR LA DEVIATION=3.5
+/FORMULE POUR EFFET DE PENTE=2
+/ANGLE DE FROTTEMENT DU SEDIMENT=2.
+
+/HIDING FACTOR FORMULA =1
+/EPAISSEUR DE COUCHE ACTIVE = 4
+
+/---------------------------------------------------------------------
+/ ENTREES-SORTIES, GRAPHIQUES ET LISTING
+/---------------------------------------------------------------------
+VARIABLES POUR LES SORTIES GRAPHIQUES=
+'U,V,S,E,H,B,M,N,P,TOB,QSBL,SJ,TAU'
+/PERIODE DE SORTIE LISTING   =100
+/PERIODE DE SORTIE GRAPHIQUE =900
+/---------------------------------------------------------------------
+/ FROTTEMENT
+/---------------------------------------------------------------------
+/---------------------------------------------------------------------
+/ FROTTEMENT
+/---------------------------------------------------------------------
+/PREDICTION DE LA RUGOSITE =OUI
+/RATIO ENTRE LA RUGOSITE DE PEAU ET LE DIAMETRE MOYEN =3
+/LOI DE FROTTEMENT SUR LE FOND                        =3
+/---------------------------------------------------------------------
+/ GENERAL
+/---------------------------------------------------------------------
+/COEFFICIENT FONCTION DE LA POROSITE = 1.6 
+BANCS DECOUVRANTS                   = OUI
+/---------------------------------------------------------------------
+/---------------------------------------------------------------------
+/ SUSPENSION
+/---------------------------------------------------------------------
+OPTION DE TRAITEMENT DES BANCS DECOUVRANTS = 1
+/ PARAMETRES PHYSIQUES

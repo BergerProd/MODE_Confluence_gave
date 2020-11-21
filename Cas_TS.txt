@@ -1,0 +1,91 @@
+/*****************************************************************/
+/
+/           FICHIER DE DECLARATION DES MOTS CLES DU CODE    /
+/                            TELEMAC 
+/ **** Ce fichier exemple devra etre modifie pour correspondre a votre simulation***/
+/
+/**********************************************************************/
+/ENVIRONNEMENT INFORMATIQUE
+/--------------------------------------------------------------------
+/              
+PROCESSEURS PARALLELES : 4
+FICHIER FORTRAN : noer_t2d_v1.f
+FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2020.slf'
+FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_2020.cli'
+FICHIER DES RESULTATS : hyd6_crue18_1_4cm_k35_noerod.slf
+SUITE DE CALCUL = NON
+REMISE A ZERO DU TEMPS = OUI
+FICHIER DES FRONTIERES LIQUIDES  : 'fcrue_crue18_GG_GC.txt'
+/FICHIER DU CALCUL PRECEDENT  : 'InitCrue18.slf'
+ 
+
+/----------------------------------------------------------------------/
+/     OPTIONS GENERALES
+/----------------------------------------------------------------------/
+/
+
+TITRE : '18/06/2018 TS'
+COUPLAGE AVEC = SISYPHE
+PERIODE DE COUPLAGE POUR SISYPHE =10
+FICHIER DES PARAMETRES DE SISYPHE : sis_TS.txt
+VARIABLES POUR LES SORTIES GRAPHIQUES : 'U,V,S,B,H,Q,M,F,M,QSBL,E,D50,W'
+PAS DE TEMPS : 0.1
+DUREE DU CALCUL : 867600 /TEMPS DE CALCUL EN SECONDES
+PERIODE POUR LES SORTIES GRAPHIQUES : 5000
+PERIODE DE SORTIE LISTING : 200
+SORTIE LISTING : OUI
+INFORMATIONS SUR LE SOLVEUR : OUI
+/
+/----------------------------------------------------------------------/
+/     CONDITIONS INITIALES
+/----------------------------------------------------------------------/
+/
+/NOMBRE DE SEUILS : 1
+
+CONDITIONS INITIALES : 'HAUTEUR CONSTANTE'
+HAUTEUR INITIALE : 2
+
+/----------------------------------------------------------------------/
+/     CONDITIONS AUX LIMITES
+/----------------------------------------------------------------------/
+DEBITS IMPOSES : 13;50;0
+COTES IMPOSEES : 0;0;447
+PROFILS DE VITESSE : 4;4;4
+/COURBES DE TARAGE  : 0;0;1
+/FICHIER DES COURBES DE TARAGE : HQ_GG_GC.txt
+/
+
+/----------------------------------------------------------------------/
+/    PARAMETRAGE PHYSIQUE
+/----------------------------------------------------------------------/
+/
+LOI DE FROTTEMENT SUR LE FOND : 3
+COEFFICIENT DE FROTTEMENT : 35
+MODELE DE TURBULENCE : 2
+COEFFICIENT DE DIFFUSION DES VITESSES : 0.005
+/----------------------------------------------------------------------/
+/    OPTIONS NUMERIQUES
+/----------------------------------------------------------------------/
+BANCS DECOUVRANTS : OUI
+BILAN DE MASSE : OUI
+PRECISION DU SOLVEUR : 1.E-6
+FORME DE LA CONVECTION : 1;5
+SOLVEUR : 1   / gradient conjugue
+MASS-LUMPING SUR H : 1
+STOCKAGE DES MATRICES : 3
+TRAITEMENT DU SYSTEME LINEAIRE : 2
+COMPATIBILITE DU GRADIENT DE SURFACE LIBRE  :  0.9
+/----------------------------------------------------------------------/
+/    FORME DE LA CONVECTION19
+/----------------------------------------------------------------------/
+IMPLICITATION POUR LA HAUTEUR : 0.55
+IMPLICITATION POUR LA VITESSE : 0.55
+OPTION DE SUPG : 2;2
+/----------------------------------------------------------------------/
+/    SOLVEUR
+/----------------------------------------------------------------------/
+MAXIMUM D'ITERATIONS POUR LE SOLVEUR : 150
+OPTION DU SOLVEUR : 3
+CLIPPING DE H         : NON
+/
+&FIN
