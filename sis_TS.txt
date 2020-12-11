@@ -1,4 +1,4 @@
-PROCESSEURS PARALLELES :  6
+PROCESSEURS PARALLELES : 2 
 /---------------------------------------------------------------------
 / SISYPHE Version v7p0 1 juil. 2015
 /---------------------------------------------------------------------
@@ -8,8 +8,8 @@ PROCESSEURS PARALLELES :  6
 /---------------------------------------------------------------------
 / FICHIERS DONNEES
 /---------------------------------------------------------------------
-FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2016_LC.slf'
-FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_LC.cli'
+FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2020.slf'
+FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_2020.cli'
 FICHIER DES RESULTATS       = 'sed16_crue18_1_4cm_K35_noerod.slf'
 / CHARRIAGE
 /---------------------------------------------------------------------
