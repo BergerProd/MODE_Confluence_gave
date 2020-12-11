@@ -9,7 +9,7 @@
 /--------------------------------------------------------------------
 /              
 PROCESSEURS PARALLELES : 2 
-/FICHIER FORTRAN : noer_t2d_v1.f
+FICHIER FORTRAN : noer_t2d_v1.f
 FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2020.slf'
 FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_2020.cli'
 FICHIER DES RESULTATS : hyd6_crue18_1_4cm_k35_noerod.slf
