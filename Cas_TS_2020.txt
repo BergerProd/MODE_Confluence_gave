@@ -8,7 +8,7 @@
 /ENVIRONNEMENT INFORMATIQUE
 /--------------------------------------------------------------------
 /              
-PROCESSEURS PARALLELES : 2 
+PROCESSEURS PARALLELES : 8 
 /FICHIER FORTRAN : noer_t2d_v1.f
 FICHIER DE GEOMETRIE   = 'geo_Conf_GC_GG_2020.slf'
 FICHIER DES CONDITIONS AUX LIMITES = 'BC_ConfGC_2020.cli'
